@@ -1,0 +1,31 @@
+# Secrets (keep .env.example tracked)
+.env
+.env.*
+!.env.example
+db-pass
+
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Build and test output
+build/
+dist/
+coverage/
+playwright-report/
+test-results/
+
+# Vercel
+.vercel/
+
+# Logs and OS files
+*.log
+npm-debug.log*
+.DS_Store
+*.tsbuildinfo
+*.pem
+.claude/
