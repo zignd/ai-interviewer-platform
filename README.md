@@ -2,7 +2,7 @@
 
 Pick a job, talk to an AI interviewer, and get a transcript and structured feedback at the end. The interviewer asks questions grounded in the role and follows up on what you actually said.
 
-- **Live demo:** <https://ai-interviewer-cyan-three.vercel.app> · demo password: `"P@ssw0rd-!@#"` (this is a private repo made for the take-home, so it is written here on purpose)
+- **Live demo:** <https://ai-interviewer-cyan-three.vercel.app> · demo password: `"P@ssw0rd-!@#"` (this is a private repo, so it is written here on purpose)
 - **Status:** all requirements and stretch goals are built. A few checks need a human, see [feature status](#feature-status).
 
 ## How it works

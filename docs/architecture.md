@@ -135,7 +135,7 @@ flowchart TB
     Dev["Developer machine"] -->|"vercel deploy --prod<br/>from a git-free copy"| Vercel
 ```
 
-The app is deployed from a copy of the project **without `.git`**. Vercel Hobby blocks deployments whose git metadata points at a GitHub organisation repository (here `AQ-Assessment`), so attaching no git metadata is what lets the deploy through. See [setup](setup.md).
+The app is deployed from a copy of the project **without `.git`**. Vercel Hobby blocks deployments whose git metadata points at a GitHub organisation repository, so attaching no git metadata is what lets the deploy through. See [setup](setup.md).
 
 ## Key decisions
 

@@ -69,7 +69,7 @@ It needs `VERCEL_TOKEN`, `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` in `.env`. The 
 1. Applies database migrations (through the pooled `DATABASE_URL` if the direct host is unreachable).
 2. Pushes the variables from `.env` to Vercel's production environment.
 3. Makes sure the Vercel project uses the Next.js preset.
-4. Copies the project to a temporary folder **without `.git`**, because Vercel Hobby blocks deployments that carry the `AQ-Assessment` org repo's git metadata.
+4. Copies the project to a temporary folder **without `.git`**, because Vercel Hobby blocks deployments that carry a GitHub organisation repo's git metadata.
 5. Runs `vercel deploy --prod`, then checks that the site answers and the database keep-alive route works.
 
 The daily keep-alive cron (`vercel.json`) uses `CRON_SECRET`, which Vercel sends automatically.

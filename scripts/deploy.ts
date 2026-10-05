@@ -6,7 +6,7 @@
  *   --check          run lint, typecheck and unit tests first
  *
  * It applies migrations, syncs the env vars from .env, stages a copy of the project WITHOUT git metadata
- * (Vercel Hobby blocks deployments that carry the AQ-Assessment org repo's metadata), makes sure the Vercel project
+ * (Vercel Hobby blocks deployments that carry a GitHub organisation repo's metadata), makes sure the Vercel project
  * uses the Next.js preset, deploys to production and smoke-checks the result.
  * Needs VERCEL_TOKEN, VERCEL_ORG_ID and VERCEL_PROJECT_ID in .env.
  */
