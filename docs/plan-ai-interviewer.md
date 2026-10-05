@@ -290,7 +290,7 @@ A task is **blocked** when it can't move forward after a reasonable attempt, for
 
 | Date       | Decision                                                                                                                                                                                                                                                                                                                                                                                                                         | Why                                                                                                                                                                     |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-10-03 | The repo stays private. All code lives in the repo the company provided, `AQ-Assessment/aq-latam-take-home-zignd`, and the brief's "public GitHub repository" wording is not acted on.                                                                                                                                                                                                                                           | The owner was told by the company to do everything in this private repo. The deployed site is still public. Do not make the repo public or create another one.          |
+| 2026-10-03 | The repo stays private. All code lives in one private repo (originally the company-provided `AQ-Assessment/aq-latam-take-home-zignd`, now `zignd/ai-interviewer-platform`), and the brief's "public GitHub repository" wording is not acted on.                                                                                                                                                                                  | The owner was told by the company to do everything in this private repo. The deployed site is still public. Do not make the repo public or create another one.          |
 | 2026-10-03 | Models: `anthropic/claude-sonnet-5.5` for questions and evaluation, `google/gemini-3.8-flash` for analysis. Reasoning effort is capped (`minimal` for analyze and generate, `low` for evaluate).                                                                                                                                                                                                                                 | Checked against the live OpenRouter catalog. Gemini's hidden reasoning tokens count against `max_tokens` and produced empty JSON until capped.                          |
 | 2026-10-03 | Next.js 16 conventions: async route `params` (`RouteContext`), `proxy.ts` instead of `middleware.ts`, `next typegen` before `tsc`.                                                                                                                                                                                                                                                                                               | Read from the bundled Next.js docs, which the generated `AGENTS.md` requires.                                                                                           |
 | 2026-10-03 | Interviews wrap up after 7 questions (6 is the minimum). The follow-up floor can only add turns, never remove them.                                                                                                                                                                                                                                                                                                              | Gives the UI a stable "Question N of about 7" and leaves room to force follow-ups.                                                                                      |
@@ -315,7 +315,7 @@ A task is **blocked** when it can't move forward after a reasonable attempt, for
 ### Milestone checklist
 
 - [x] **M1. Scaffold and engineering baseline**
-  - [x] Next.js (App Router) + TypeScript strict project in `aq-latam-take-home-zignd/`
+  - [x] Next.js (App Router) + TypeScript strict project in `ai-interviewer-platform/`
   - [x] ESLint, Prettier, pre-commit hook, `.env.example`, Zod env validation
   - [x] Vitest and Playwright configured, with an example test of each passing
   - [x] GitHub Actions CI (lint, typecheck, unit, integration, e2e) green on the default branch
@@ -392,7 +392,7 @@ A task is **blocked** when it can't move forward after a reasonable attempt, for
 - [x] Session is saved, and the end screen shows the full transcript and a structured evaluation
 - [x] Clean UI with minimal friction
 - [x] Works end to end in a hosted environment, on a public URL (password shared if used)
-- [x] All code is in the single repo provided by the company (`AQ-Assessment/aq-latam-take-home-zignd`, kept private per their instruction, see the Decision log)
+- [x] All code is in the single repo provided by the company (now `zignd/ai-interviewer-platform`, kept private, see the Decision log)
 - [x] **Stretch 1:** decision panel
 - [x] **Stretch 2:** job-specific question packs
 - [x] **Stretch 3:** video mode
@@ -429,7 +429,7 @@ LLM quality isn't asserted by exact text. Tests check structure (valid JSON agai
 
 ### Documentation
 
-All code lives in the existing repo, `aq-latam-take-home-zignd/`. Its current `README.md` is rewritten as the entry point.
+All code lives in the repo `ai-interviewer-platform/`. Its current `README.md` is rewritten as the entry point.
 
 - **`README.md` is kept up to date as the project grows**, not written at the end. Each milestone updates it where its content changed. It covers what the app is, a screenshot or GIF, the live URL (and demo password, if any), a short architecture overview with one diagram, quick start, how to run the tests, and the feature status against the requirements and stretch goals.
 - **The README links to every page in `docs/`** through a "Documentation" table (page name, one-line description, link), so nothing in `docs/` is orphaned. Each docs page links back to the README and to related pages.

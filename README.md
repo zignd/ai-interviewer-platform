@@ -71,17 +71,16 @@ CI runs all of these on every push. See [testing](docs/testing.md).
 
 ## Documentation
 
-| Page                                                           | What it covers                                                                       |
-| -------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [Plan and progress checklist](docs/plan-ai-interviewer.md)     | The full plan, decisions, blockers and the checklist this project is tracked against |
-| [Take-home brief](docs/Take-Home%20Assignement%20-%20LatAM.md) | The original assignment                                                              |
-| [Architecture](docs/architecture.md)                           | System overview, one turn, access control, recordings, and the deployment view       |
-| [Interview engine](docs/interview-engine.md)                   | State machine, policy rules, model steps and the decision panel                      |
-| [Data model](docs/data-model.md)                               | Tables, relationships and status fields                                              |
-| [Voice pipeline](docs/voice-pipeline.md)                       | Speech in and out, turn-taking rules, latency and fallbacks                          |
-| [Capacity queue](docs/capacity-queue.md)                       | The 4-at-a-time gate, waiting room, promotion and expiry                             |
-| [Recording storage](docs/recording-storage.md)                 | Compression, storage budget and oldest-first deletion                                |
-| [History and replay](docs/history-and-replay.md)               | History page, replay and how metrics are computed                                    |
-| [Decision records](docs/adr/README.md)                         | Short records of the key decisions and tradeoffs                                     |
-| [Testing](docs/testing.md)                                     | Test levels, the fakes, live tests and how to run everything                         |
-| [Setup](docs/setup.md)                                         | Accounts, environment variables, local development and deployment                    |
+| Page                                                       | What it covers                                                                       |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [Plan and progress checklist](docs/plan-ai-interviewer.md) | The full plan, decisions, blockers and the checklist this project is tracked against |
+| [Architecture](docs/architecture.md)                       | System overview, one turn, access control, recordings, and the deployment view       |
+| [Interview engine](docs/interview-engine.md)               | State machine, policy rules, model steps and the decision panel                      |
+| [Data model](docs/data-model.md)                           | Tables, relationships and status fields                                              |
+| [Voice pipeline](docs/voice-pipeline.md)                   | Speech in and out, turn-taking rules, latency and fallbacks                          |
+| [Capacity queue](docs/capacity-queue.md)                   | The 4-at-a-time gate, waiting room, promotion and expiry                             |
+| [Recording storage](docs/recording-storage.md)             | Compression, storage budget and oldest-first deletion                                |
+| [History and replay](docs/history-and-replay.md)           | History page, replay and how metrics are computed                                    |
+| [Decision records](docs/adr/README.md)                     | Short records of the key decisions and tradeoffs                                     |
+| [Testing](docs/testing.md)                                 | Test levels, the fakes, live tests and how to run everything                         |
+| [Setup](docs/setup.md)                                     | Accounts, environment variables, local development and deployment                    |
